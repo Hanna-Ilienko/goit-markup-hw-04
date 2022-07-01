@@ -46,10 +46,11 @@ background: var(--body-color);}
 --header-color: #FFFFFF;
 --button-color: #2196F3;
 --buttons-btn-color: #F5F4FA;
---text-color: #757575;}
+--text-color: #757575;
+--icon-color: #FFFFFF;}
 
 .container {
-    width: 1200px;
+    width: 1600px;
     margin: 0 auto;}
 
 /*---------------HEADER------------------------------*/
@@ -201,7 +202,8 @@ padding-top: 94px;
     border: 1px solid red;
 }
 
-.text-workers{padding-bottom: 30px;}
+.text-workers{padding-bottom: 30px;
+margin-bottom: 16px;}
 
 .workers-list {display: flex;
 margin-left: -30px;}
@@ -210,6 +212,17 @@ margin-left: -30px;}
 margin-left: 30px;}
 
 .workers-image {margin-bottom: 30px;}
+
+.masters-soc-list{display: flex;
+justify-content: center;}
+
+.masters-soc-item + .masters-soc-item{margin-left: 10px;}
+
+.masters-soc-link{width: 44px;
+height: 44px;
+background-color: #2196F3;
+border-radius: 50%;
+display: block;}
 /*-----------portfolio---MAIN---------------------*/
 
 .portfolio {}
