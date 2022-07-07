@@ -73,7 +73,8 @@ align-items: center;}
 
 .header-nav {}
 
-.logo-link {margin-right: 93px;}
+.logo-link {margin-right: 93px;
+margin-left: 215px;}
 
 .logo {font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -81,7 +82,8 @@ align-items: center;}
 line-height: 1.19em;
 letter-spacing: 0.03em;}
 
-.logo-text_web {color: var(--brand-color-);}
+.logo-text_web {color: var(--brand-color-);
+}
 
 .logo-text_studio {color: var(--brand-color-header);}
 
@@ -175,13 +177,29 @@ margin: 0 auto;}
 
 .company {padding-top: 94px;
     padding-bottom: 94px;
-border: 1px solid red;}
+border: 1px solid red;
+}
 
-.company-list {display: flex;}
+.company-list {display: flex;
+    margin-right: -30px;
+}
 
-.company-item {border: 1px solid red;}
+.company-item {border: 1px solid red;
+    flex-basis: calc(100%-120px)/4;
+    margin-right: 30px;
+}
 
-.company-item {}
+.company-item + .company-item {margin-right: 30px;}
+
+.company-link{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270;
+    height: 120;
+    background-color: #F5F4FA;
+margin-bottom: 30px;}
+
+.company-icon{}
 
 .subtitle-third {font-weight: 700;
     font-size: 14px;
@@ -250,9 +268,12 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 
 .masters-soc-list{display: flex;
 justify-content: center;
-margin-bottom: 30px;}
+margin-bottom: 30px;
+margin-left: -10px;}
 
-.masters-soc-item + .masters-soc-item{margin-left: 10px;}
+.masters-soc-item {
+    flex-basis: calc(100%-40px)/4;
+    margin-left: 10px;}
 
 .masters-soc-link{width: 44px;
 height: 44px;
@@ -289,9 +310,12 @@ fill: var(--icon-color)}
 .clients-list {display: flex;
 justify-content: center;
 margin-bottom: 94px;
+margin-left: -30px;
 }
 
-.clients-item{border: 1px solid #AFB1B8;}
+.clients-item{border: 1px solid #AFB1B8;
+flex-basis: calc(100%-180px)/6;
+margin-left: 30px;}
 
 .clients-item + .clients-item {margin-left: 30px;}
 
@@ -386,7 +410,7 @@ align-items: baseline;}
 .adress-footer {margin-right: 70px;
 margin-left: 215px;}
 
-.logo-link {}
+.logo-link-footer {}
 
 .logo {}
 
@@ -429,9 +453,10 @@ letter-spacing: 0.03em;}
 .footer-soc-list {
     display: flex;
     justify-content: center;
+    margin-left: -10px;
 }
 
-.footer-soc-item+.footer-soc-item {
+.footer-soc-item {flex-basis: calc(100%-40px)/4;
     margin-left: 10px;
 }
 
