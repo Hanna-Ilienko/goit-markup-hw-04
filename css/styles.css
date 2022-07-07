@@ -54,6 +54,7 @@ background: var(--body-color);}
 --icon-font-color: #FFFFFF;
 --icon-color: #AFB1B8;
 --icon-color-footer: #FFFFFF;
+--client-icon-color-hover: #2196F3;
 --icon-font-color-hover: #2196F3;
 --icon-color-hover: #FFFFFF;}
 
@@ -268,6 +269,43 @@ fill: var(--icon-color)}
 .masters-soc-link:hover .masters-soc-icon {fill: var(--icon-color-hover);}
 */
 /*--.masters-soc-icon {fill: currentColor;}--*/
+
+.clients {
+    padding-top: 94px;
+    border: 1px solid red;}
+
+.container {}
+
+.subtitle-second {}
+
+.clients-list {display: flex;
+justify-content: center;
+margin-bottom: 94px;
+}
+
+.clients-item{border: 1px solid #AFB1B8;}
+
+.clients-item + .clients-item {margin-left: 30px;}
+
+.clients-link {
+width: 170px;
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icon-color);}
+
+.clients-icon {}
+
+.clients-link:focus {
+    fill: var(--client-icon-color-hover);
+}
+
+.clients-link:hover {
+    fill: var(--client-icon-color-hover);
+}
+
 /*-----------portfolio---MAIN---------------------*/
 
 .portfolio {}
