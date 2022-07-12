@@ -172,17 +172,17 @@ display: block;
 font-weight: 700;
     font-size: 16px;
     line-height: 1.88em;
-display: flex;
+display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-max-width: 200px;
-max-height: 50px;
+width: 200px;
+height: 50px;
 border: 1px var(--button-color);
 border-radius: 4px;
-display: block;
-margin: 0 auto;}
+margin: 0 auto;
+}
 
 .company {padding-top: 94px;
     padding-bottom: 94px;
@@ -190,15 +190,14 @@ border: 1px solid red;
 }
 
 .company-list {display: flex;
-    margin-right: -30px;
-}
+    justify-content: center;}
+    
 
 .company-item {border: 1px solid red;
-    flex-basis: calc(100%-120px)/4;
-    margin-right: 30px;
+   
 }
 
-.company-item + .company-item {margin-right: 30px;}
+.company-item:not(:last-child){margin-right: 30px;}
 
 .company-link{display: flex;
     justify-content: center;
@@ -237,10 +236,13 @@ max-width: 270px;
 margin-bottom: 50px;
 text-align: center;}
 
-.work-list {display: flex;}
-
-.work-item {margin-left: 30px;
+.work-list {display: flex;
+justify-content: center;
+margin-left: -30px;
 }
+
+.work-item{flex-basis: calc(100%-90px)/3;
+    margin-left: 30px;}
 
 .work-image {}
 
@@ -265,6 +267,7 @@ text-align: center;
 }
 
 .workers-list {display: flex;
+    justify-content: center;
 margin-left: -30px;}
 
 .workers-item {flex-basis: calc(100%-120px)/4;
@@ -355,7 +358,8 @@ width: 170px;
 
 .buttons-list {padding-top: 100px;
     padding-bottom: 56px;
-    border: 1px solid red;}
+    border: 1px solid red;
+border-radius: 4px;}
 
     .buttons-list .container {display: flex;
     justify-content: center;
@@ -394,12 +398,16 @@ margin-left: -30px;
 margin-bottom: -30px;}
 
     .projects-list .container {display: flex;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+justify-content: center;}
 
 .projects-item {flex-basis: calc(100%-90px)/3;
 margin-left: 30px;
 margin-bottom: 30px;
 border: 1px solid var(--borders-color-project);}
+
+.projects-item:hover,
+.projects-item:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 .projects-image {margin-bottom: 20px;}
 
